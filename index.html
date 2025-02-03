@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Food Timer 🍚</h1>
+      <p>Set the timer for your food:</p>
+      <input
+        type="number"
+        id="minutes"
+        placeholder="Minutes"
+        min="1"
+        max="60"
+      />
+      <button onclick="startTimer()">Start Timer</button>
+      <p id="timer-display"></p>
+      <audio id="alarm" src="alarm.wav"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
